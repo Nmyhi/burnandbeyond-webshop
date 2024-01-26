@@ -173,9 +173,9 @@ I like to include a palette of the colour scheme here, my favourite site for cre
 
 ### Typography
 
-I have chosen FONT google font family.
+I have chosen Lato google font family.
 
-[FONT](URL)
+[Lato](https://fonts.google.com/specimen/Lato)
 
 I chose for this font family because I think it appeares to be something fit well into my project.
 I think it is an accessible friendly font because the characters are uppercase and easy to read.
@@ -312,7 +312,7 @@ Git - For version control.
 
 Github - To save and store the files for the website.
 
-Bootstrap v4.6.2 - The framework for the website. Code for the navigation bar, carousel, cards and form were used and modified. Additional CSS styling was also implemented in style.css.
+Bootstrap v4.6.2 - The framework for the website. Code for the navigation bar, carousel, cards and form were used and modified. Additional CSS styling was also implemented in base.css.
 
 Google Fonts - To import the fonts used on the website.
 
@@ -341,6 +341,8 @@ Elephant SQL - To host my database.
 [Logomakr](https://logomakr.com/) To create the brand logo.
 
 [Freepik](https://www.freepik.com) To downloag images for the categories.
+
+[Bulma](https://bulma.io/) Css framework used for standardise font-awesome icons.
 
 ---
 
