@@ -312,7 +312,7 @@ Git - For version control.
 
 Github - To save and store the files for the website.
 
-Materialize 1.0.0 - The framework for the website. Code for the navigation bar, carousel, cards and form were used and modified. Additional CSS styling was also implemented in style.css.
+Bootstrap v4.6.2 - The framework for the website. Code for the navigation bar, carousel, cards and form were used and modified. Additional CSS styling was also implemented in style.css.
 
 Google Fonts - To import the fonts used on the website.
 
@@ -334,7 +334,7 @@ Elephant SQL - To host my database.
 
 [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-[Materialize 1.0.0](https://materializecss.com/) To develop front end appearence using pre-coded CSS.
+[Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) To develop front end appearence using pre-coded CSS.
 
 [Flaticon](https://www.flaticon.com/) To download nice png icons. Flaticon allows you to download entire icon packs in various styles. You can filter by category, style, and color to find the pack that suits your needs.
 
