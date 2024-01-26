@@ -1,0 +1,212 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "coaster01",
+        "name": "Age rings coaster",
+        "description": "Protect your precious wooden tables from stains and damage with a charming coaster that makes quite the statement. Crafted in plywood with a gorgeous laser-cut design, this coaster brings exceptional durability and functionality, while adding an elegant touch to your coffee table or desk. With so many designs to choose from, this coaster also makes a thoughtful gift that anyone will appreciate and use. *Size: 85x90x15mm *Natural unvarnished finish *3mm plywood",
+        "price": 9.90,
+        "category": 6,
+        "rating": 4.5,
+        "image_url": "",
+        "image": "age_rings_coaster.webp"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "mandala01",
+        "name": "Blue Croched Mandala",
+        "description": "This unique handmade crochet mandala will be the most beautiful addition to your home decor! It looks best on the wall in bedroom, living rooms or basically anywhere you want to put it up around the house. This masterpiece has been made by a Hungarian artist who is on the mission to bring her amazing creations to the world wide web!",
+        "price": 65.90,
+        "category": 2,
+        "rating": 4.6,
+        "image_url": "",
+        "image": "blue_mandala.webp"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "cardwallet01",
+        "name": "Blue Card Wallet",
+        "description": "Slim aluminum alloy card wallet with RFID blocking technology. Protect your credit and bank cards from external threats with this stylish, elegant and sturdy metal, card-wallet. ",
+        "price": 15.90,
+        "category": 4,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "blue_card_wallet.webp"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "coaster02",
+        "name": "Floppy Disk Coaster",
+        "description": "Protect your precious wooden tables from stains and damage with a charming coaster that makes quite the statement. Crafted in plywood with a gorgeous laser-cut design, this coaster brings exceptional durability and functionality, while adding an elegant touch to your coffee table or desk. With so many designs to choose from, this coaster also makes a thoughtful gift that anyone will appreciate and use. *Size: 85x90x15mm *Natural unvarnished finish *3mm plywood",
+        "price": 13.50,
+        "category": 5,
+        "rating": 4.2,
+        "image_url": "",
+        "image": "floppy_coaster.webp"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "coaster03",
+        "name": "Flower Coaster",
+        "description": "Protect your precious wooden tables from stains and damage with a charming coaster that makes quite the statement. Crafted in plywood with a gorgeous laser-cut design, this coaster brings exceptional durability and functionality, while adding an elegant touch to your coffee table or desk. With so many designs to choose from, this coaster also makes a thoughtful gift that anyone will appreciate and use. *Size: 85x90x15mm *Natural unvarnished finish *3mm plywood",
+        "price": 9.90,
+        "category": 3,
+        "rating": 5.0,
+        "image_url": "",
+        "image": "flower_coaster.webp"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "cardwallet02",
+        "name": "Green Card Wallet",
+        "description": "Slim aluminum alloy card wallet with RFID blocking technology. Protect your credit and bank cards from external threats with this stylish, elegant and sturdy metal, card-wallet. ",
+        "price": 15.90,
+        "category": 4,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "green_card_wallet.webp"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "mandala02",
+        "name": "Grey Mandala",
+        "description": "This unique handmade crochet mandala will be the most beautiful addition to your home decor! It looks best on the wall in bedroom, living rooms or basically anywhere you want to put it up around the house. This masterpiece has been made by a Hungarian artist who is on the mission to bring her amazing creations to the world wide web!",
+        "price": 35.90,
+        "category": 6,
+        "rating": 4.4,
+        "image_url": "",
+        "image": "grey_mandala.webp"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "lampshade01",
+        "name": "Heptahedron lampshade",
+        "description": "Create a dreamy, calming ambiance in your home with this unique Heptahedron cardboard lampshade. Carefully handcrafted with laser-cut corrugated cardboard, this lampshade displays a minimalist silhouette that adds a touch of modern elegance to any room. The intricate pattern of the corrugated cardboard projects mesmerizing shadows onto your walls to spread a warm, truly comforting feeling that you will enjoy.",
+        "price": 38.90,
+        "category": 1,
+        "rating": 4.5,
+        "image_url": "",
+        "image": "heptahedron.webp"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "coaster04",
+        "name": "Jack Coaster",
+        "description": "Protect your precious wooden tables from stains and damage with a charming coaster that makes quite the statement. Crafted in plywood with a gorgeous laser-cut design, this coaster brings exceptional durability and functionality, while adding an elegant touch to your coffee table or desk. With so many designs to choose from, this coaster also makes a thoughtful gift that anyone will appreciate and use. *Size: 85x90x15mm *Natural unvarnished finish *3mm plywood",
+        "price": 13.50,
+        "category": 5,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "jack_coaster.webp"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "coaster05",
+        "name": "Mini Palett Coaster",
+        "description": "Protect your precious wooden tables from stains and damage with a charming coaster that makes quite the statement. Crafted in plywood with a gorgeous laser-cut design, this coaster brings exceptional durability and functionality, while adding an elegant touch to your coffee table or desk. With so many designs to choose from, this coaster also makes a thoughtful gift that anyone will appreciate and use. *Size: 85x90x15mm *Natural unvarnished finish *3mm plywood",
+        "price": 14.50,
+        "category": 3,
+        "rating": 4.4,
+        "image_url": "",
+        "image": "mini_palett_coaster.webp"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "coaster06",
+        "name": "Organic Leaf Coaster",
+        "description": "Protect your precious wooden tables from stains and damage with a charming coaster that makes quite the statement. Crafted in plywood with a gorgeous laser-cut design, this coaster brings exceptional durability and functionality, while adding an elegant touch to your coffee table or desk. With so many designs to choose from, this coaster also makes a thoughtful gift that anyone will appreciate and use. *Size: 85x90x15mm *Natural unvarnished finish *3mm plywood",
+        "price": 9.90,
+        "category": 3,
+        "rating": 4,
+        "image_url": "",
+        "image": "organic_leaf_coaster.webp"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "mandala03",
+        "name": "Peach Mandala",
+        "description": "This unique handmade crochet mandala will be the most beautiful addition to your home decor! It looks best on the wall in bedroom, living rooms or basically anywhere you want to put it up around the house. This masterpiece has been made by a Hungarian artist who is on the mission to bring her amazing creations to the world wide web!",
+        "price": 45.90,
+        "category": 2,
+        "rating": 4.6,
+        "image_url": "",
+        "image": "peach_mandala.webp"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "lampshade02",
+        "name": "Jupiter Lampshade",
+        "description": "Create a dreamy, calming ambiance in your home with this unique Jupiter cardboard lampshade. Carefully handcrafted with laser-cut corrugated cardboard, this lampshade displays a minimalist silhouette that adds a touch of modern elegance to any room. The intricate pattern of the corrugated cardboard projects mesmerizing shadows onto your walls to spread a warm, truly comforting feeling that you will enjoy.",
+        "price": 88.90,
+        "category": 1,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "jupiter_lampshade.webp"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "coaster07",
+        "name": "Sri-Yantra Coaster",
+        "description": "Protect your precious wooden tables from stains and damage with a charming coaster that makes quite the statement. Crafted in plywood with a gorgeous laser-cut design, this coaster brings exceptional durability and functionality, while adding an elegant touch to your coffee table or desk. With so many designs to choose from, this coaster also makes a thoughtful gift that anyone will appreciate and use. *Size: 85x90x15mm *Natural unvarnished finish *3mm plywood",
+        "price": 9.90,
+        "category": 3,
+        "rating": 4.7,
+        "image_url": "",
+        "image": "sri_yantra_coaster.webp"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "mandala04",
+        "name": "White Mandala",
+        "description": "This unique handmade crochet mandala will be the most beautiful addition to your home decor! It looks best on the wall in bedroom, living rooms or basically anywhere you want to put it up around the house. This masterpiece has been made by a Hungarian artist who is on the mission to bring her amazing creations to the world wide web!",
+        "price": 33.50,
+        "category": 2,
+        "rating": 4.8,
+        "image_url": "",
+        "image": "white_mandala.webp"
+      }
+    }
+  ]

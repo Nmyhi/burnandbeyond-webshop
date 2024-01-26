@@ -1,0 +1,50 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "lampshades",
+        "friendly_name": "Lampshades"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "mandalas",
+        "friendly_name": "Mandalas"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "coasters",
+        "friendly_name": "Coasters"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "card_wallets",
+        "friendly_name": "Card Wallets"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+      }
+    }
+  ]
