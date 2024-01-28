@@ -18,7 +18,7 @@
       "model": "products.product",
       "fields": {
         "sku": "mandala01",
-        "name": "Blue Croched Mandala",
+        "name": "Blue Crochet Mandala",
         "description": "This unique handmade crochet mandala will be the most beautiful addition to your home decor! It looks best on the wall in bedroom, living rooms or basically anywhere you want to put it up around the house. This masterpiece has been made by a Hungarian artist who is on the mission to bring her amazing creations to the world wide web!",
         "price": 65.90,
         "category": 2,
@@ -88,7 +88,7 @@
       "model": "products.product",
       "fields": {
         "sku": "mandala02",
-        "name": "Grey Mandala",
+        "name": "Grey Crochet Mandala",
         "description": "This unique handmade crochet mandala will be the most beautiful addition to your home decor! It looks best on the wall in bedroom, living rooms or basically anywhere you want to put it up around the house. This masterpiece has been made by a Hungarian artist who is on the mission to bring her amazing creations to the world wide web!",
         "price": 35.90,
         "category": 6,
@@ -158,7 +158,7 @@
       "model": "products.product",
       "fields": {
         "sku": "mandala03",
-        "name": "Peach Mandala",
+        "name": "Peach Crochet Mandala",
         "description": "This unique handmade crochet mandala will be the most beautiful addition to your home decor! It looks best on the wall in bedroom, living rooms or basically anywhere you want to put it up around the house. This masterpiece has been made by a Hungarian artist who is on the mission to bring her amazing creations to the world wide web!",
         "price": 45.90,
         "category": 2,
@@ -200,7 +200,7 @@
       "model": "products.product",
       "fields": {
         "sku": "mandala04",
-        "name": "White Mandala",
+        "name": "White Crochet Mandala",
         "description": "This unique handmade crochet mandala will be the most beautiful addition to your home decor! It looks best on the wall in bedroom, living rooms or basically anywhere you want to put it up around the house. This masterpiece has been made by a Hungarian artist who is on the mission to bring her amazing creations to the world wide web!",
         "price": 33.50,
         "category": 2,
