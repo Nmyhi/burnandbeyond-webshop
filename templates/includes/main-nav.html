@@ -18,9 +18,9 @@
                 Gifts
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Coasters</a>
-                <a href="" class="dropdown-item">Card Wallets</a>
-                <a href="" class="dropdown-item">All Gifts</a>
+                <a href="{% url 'products' %}?category=coasters" class="dropdown-item">Coasters</a>
+                <a href="{% url 'products' %}?category=card_wallets" class="dropdown-item">Card Wallets</a>
+                <a href="{% url 'products' %}?category=coasters,card_wallets" class="dropdown-item">All Gifts</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Homeware
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Lampshades</a>
-                <a href="" class="dropdown-item">Mandalas</a>
-                <a href="" class="dropdown-item">All Homeware</a>
+                <a href="{% url 'products' %}?category=lampshades" class="dropdown-item">Lampshades</a>
+                <a href="{% url 'products' %}?category=mandalas" class="dropdown-item">Mandalas</a>
+                <a href="{% url 'products' %}?category=lampshades,mandalas" class="dropdown-item">All Homeware</a>
             </div>
         </li>
 
@@ -40,9 +40,9 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
