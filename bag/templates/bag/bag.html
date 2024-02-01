@@ -24,6 +24,7 @@
 
         <div class="row">
             <div class="col">
+                <!-- display bag items if there is any in the bag -->
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
@@ -36,7 +37,7 @@
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
-
+                            <!-- iterating through the bag items -->
                             {% for item in bag_items %}
                                 <tr>
                                     <td class="p-3 w-25">
@@ -59,6 +60,7 @@
                                     </td>
                                 </tr>
                             {% endfor %}
+                            <!-- bag items subtotal and grand total -->
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
@@ -71,6 +73,7 @@
                                     {% endif %}
                                 </td>
                             </tr>
+                            <!-- keep shopping and checkout buttons -->
                             <tr>
                                 <td colspan="5" class="text-right">
                                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
@@ -90,6 +93,7 @@
                         </table>
                     </div>
                 {% else %}
+                <!-- Display this if the bag is empty -->
                     <p class="lead mb-5">Your bag is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">

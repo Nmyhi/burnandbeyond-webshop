@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category
 
-# Register your models here.
+# Display custom info of the categories and products on the admin panel
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (

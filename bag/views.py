@@ -6,6 +6,7 @@ def view_bag(request):
     return render(request, 'bag/bag.html')
 
 
+# views for the bag app
 def add_to_bag(request, item_id):
     """ Add a quantity of the product to the bag """
 
@@ -15,7 +16,7 @@ def add_to_bag(request, item_id):
     if 'product_size' in request.POST:
         size=request.POST['product_size']
     bag = request.session.get('bag', {})
-
+# logic for sizes (future features)
     if size:
         if item_id in list(bag.keys()):
             if size in bag[item_id]['items_by_size'].keys():
