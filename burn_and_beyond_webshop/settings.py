@@ -33,7 +33,8 @@ DEBUG = development
 
 if development:
     ALLOWED_HOSTS = ['localhost',
-                     '8000-nmyhi-burnandbeyondweb-q3i3rwm2jzu.ws-eu107.gitpod.io']
+                     '8000-nmyhi-burnandbeyondweb-q3i3rwm2jzu.ws-eu107.gitpod.io',
+                     '8000-nmyhi-burnandbeyondweb-q3i3rwm2jzu.ws-eu108.gitpod.io']
 else:
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
