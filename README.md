@@ -186,7 +186,8 @@ I chose for this font family because I think it appeares to be something fit wel
 I think it is an accessible friendly font because the characters are uppercase and easy to read.
 I used font-weight 400.
 
-![image link](URL)
+![Pacifico font](/static/images/pacifico_font.png)
+![Lato font](/static/images/lato_font.png)
 
 [Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
 
@@ -195,7 +196,7 @@ I used font-weight 400.
 I used colourful icon images for this project for the categories and a logo generator for my brand logo.
 I used a favicon crator for my favicon.
 
-![Brand Logo](URL)
+![Brand Logo](static/images/burn_and_beyond_logo.png)
 
 [Favicon creator](https://favicon.io/)
 [Logo Maker](https://logomakr.com/)
