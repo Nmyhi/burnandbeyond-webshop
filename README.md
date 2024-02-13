@@ -197,6 +197,7 @@ I used colourful icon images for this project for the categories and a logo gene
 I used a favicon crator for my favicon.
 
 ![Brand Logo](static/images/burn_and_beyond_logo.png)
+![Favicon](static/images/favicon.ico)
 
 [Favicon creator](https://favicon.io/)
 [Logo Maker](https://logomakr.com/)
