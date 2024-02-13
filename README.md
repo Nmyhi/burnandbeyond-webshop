@@ -165,7 +165,7 @@ I am going to go into details in the user stories!
 
 ## Database
 
-- [Database design considerations](URL)
+- [Database design considerations](DATABASE_README.md)
 
 ### Colour Scheme
 
@@ -295,6 +295,7 @@ The resistration page is always accessible in case the user wants to register a 
 * Allow superusers to edit categories
 * Allow superusers to delete categories
 * Allow users and superusers to upload profile image
+* Switch between light and dark theme
 
 
 ### Accessibility
