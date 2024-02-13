@@ -2,7 +2,7 @@
 
 ## Overview
 
-This database design is for Budgetpal expenses manager application that helps users track and manage their expenses. The application includes user authentication, expense tracking, and predefined expense categories.
+This database design is for BUrn and Beyond Webshop ecommerce site application that is a fully functioning ecommerce website filled with handmade and laser-cut products. The application includes user authentication, products, purchasing system and account management. I have used a relation database (sql) scheme and I have deployed the database to [elephantsql](https://www.elephantsql.com/)
 
 ![App Preview](URL)
 
@@ -14,85 +14,82 @@ This database design is for Budgetpal expenses manager application that helps us
   * [Overview](#overview)
   * [Table of Contents](#table-of-contents)
   * [Database Schema](#database-schema)
-    * [User](#user)
-    * [Expense](#expense)
     * [Category](#category)
+    * [Product](#Product)
+    * [UserProfile](#userprofile)
+    * [Order](#order)
+    * [OrderLineIem](#orderlineitem)
   * [ER Diagram](#er-diagram)
-  * [Table Descriptions](#table-descriptions)
-    * [User](#user-1)
-    * [Expense](#expense-1)
-    * [Category](#category-1)
   * [Sample Queries](#sample-queries)
 
 ## Database Schema
 
-### User
-
-- **Columns:**
-  - `id`: Integer, primary key
-  - `username`: String(50), unique, not nullable
-  - `password_hash`: String(150), not nullable
-  - `email`: String(150), unique, index
-  - `balance`: Float, default 0.0, not nullable
-  - `savings`: Float, default 0.0, not nullable
-  - `expenses`: Relationship with Expense model
-  - `joined_at`: DateTime, default datetime.utcnow, index
-
-### Expense
-
-- **Columns:**
-  - `id`: Integer, primary key
-  - `amount`: Float, not nullable
-  - `description`: String(255)
-  - `expense_date`: Date, not nullable
-  - `user_id`: Integer, foreign key to User.id, not nullable
-  - `category_id`: Integer, foreign key to Category.id, nullable
-  - `category`: Relationship with Category model
-
 ### Category
 
 - **Columns:**
-  - `id`: Integer, primary key
-  - `name`: String(50), unique, not nullable
-  - `logo_url`: String(255), not nullable
+  - `name` = models.CharField(max_length=254)
+  - `friendly_name` = models.CharField(max_length=254, null=True, blank=True)
+
+### Product
+
+- **Columns:**
+  - `category` = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+  - `sku` = models.CharField(max_length=254, null=True, blank=True)
+  - `name` = models.CharField(max_length=254)
+  - `description` = models.TextField()
+  - `has_sizes` = models.BooleanField(default=False, null=True, blank=True)
+  - `price` = models.DecimalField(max_digits=6, decimal_places=2)
+  - `rating` = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+  - `image_url` = models.URLField(max_length=1024, null=True, blank=True)
+  - `image` = models.ImageField(null=True, blank=True)
+
+### UserProfile
+
+- **Columns:**
+  - `user` = models.OneToOneField(User, on_delete=models.CASCADE)
+  - `default_phone_number` = models.CharField(max_length=20, null=True, blank=True)
+  - `default_street_address1` = models.CharField(max_length=80, null=True, blank=True)
+  - `default_street_address2` = models.CharField(max_length=80, null=True, blank=True)
+  - `default_town_or_city` = models.CharField(max_length=40, null=True, blank=True)
+  - `default_county` = models.CharField(max_length=80, null=True, blank=True)
+  - `default_postcode` = models.CharField(max_length=20, null=True, blank=True)
+  - `default_country` = CountryField(blank_label='Country', null=True, blank=True)
+
+### Order
+
+- **Columns:**
+  - `order_number` = models.CharField(max_length=32, null=False, editable=False)
+  - `user_profile` = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders')
+  - `full_name` = models.CharField(max_length=50, null=False, blank=False)
+  - `email` = models.EmailField(max_length=254, null=False, blank=False)
+  - `phone_number` = models.CharField(max_length=20, null=False, blank=False)
+  - `country` = CountryField(blank_label='Country *', null=False, blank=False)
+  - `postcode` = models.CharField(max_length=20, null=True, blank=True)
+  - `town_or_city` = models.CharField(max_length=40, null=False, blank=False)
+  - `street_address1` = models.CharField(max_length=80, null=False, blank=False)
+  - `street_address2` = models.CharField(max_length=80, null=True, blank=True)
+  - `county` = models.CharField(max_length=80, null=True, blank=True)
+  - `date` = models.DateTimeField(auto_now_add=True)
+  - `delivery_cost` = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
+  - `order_total` = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+  - `grand_total` = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+  - `original_bag` = models.TextField(null=False, blank=False, default='')
+  - `stripe_pid` = models.CharField(max_length=254, null=False, blank=False, default='')
+
+### OrderLineItem
+
+- **Columns:**
+  - `order` = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
+  - `product` = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
+  - `product_size` = models.CharField(max_length=2, null=True, blank=True)
+  - `quantity` = models.IntegerField(null=False, blank=False, default=0)
+  - `lineitem_total` = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
 ## ER Diagram
 
 Include an Entity-Relationship (ER) diagram to illustrate the relationships between entities in the database.
 
-![ER Diagram](/budgetpal/static/images/er_diagram.png)
-
-## Table Descriptions
-
-### User
-
-- **Columns:**
-  - `id`: Integer, primary key
-  - `username`: String(50), unique, not nullable - The username of the user.
-  - `password_hash`: String(150), not nullable - The hashed password of the user.
-  - `email`: String(150), unique, index - The email address of the user.
-  - `balance`: Float, default 0.0, not nullable - The current balance of the user.
-  - `savings`: Float, default 0.0, not nullable - The amount of savings for the user.
-  - `expenses`: Relationship with Expense model - One-to-Many relationship with Expense table.
-  - `joined_at`: DateTime, default datetime.utcnow, index - The date and time when the user joined.
-
-### Expense
-
-- **Columns:**
-  - `id`: Integer, primary key
-  - `amount`: Float, not nullable - The amount of the expense.
-  - `description`: String(255) - A description or note for the expense.
-  - `expense_date`: Date, not nullable - The date when the expense occurred.
-  - `user_id`: Integer, foreign key to User.id, not nullable - The user associated with the expense.
-  - `category_id`: Integer, foreign key to Category.id, nullable - The category associated with the expense.
-  - `category`: Relationship with Category model - Many-to-One relationship with Category table.
-
-### Category
-
-- **Columns:**
-  - `id`: Integer, primary key
-  - `name`: String(50), unique, not nullable - The name of the category.
-  - `logo_url`: String(255), not nullable - The URL to the logo/icon representing the category.
+![ER Diagram](URL)
 
 ## Sample Queries
 

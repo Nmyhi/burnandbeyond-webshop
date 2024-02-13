@@ -58,16 +58,20 @@ This site exist because of my own personal goal which is to eventually sell my l
 
 #### Key information for the site
 
-In this site my goal was to create a fully functioning ecommerce web application with real payments later on.
+In this site my goal was to create a fully functioning ecommerce web application with real payments later on. I have used django framework, stripe and Amazon web services to accomplish it.
 The users will be able to:
 
 * Easily navigate on the site
-* Comment and rate products
 * Create an account
-* Log-in to their account
+* Log-in to account
 * Log-out
 * Place purchases
-* Contact the Store
+* Browse products
+* Filter products
+* Save default shipping information
+* Allow superusers to delete products
+* Allow superusers to update products
+* Allow superusers to create products
 
 I am going to go into details in the user stories!
 
@@ -284,6 +288,13 @@ The resistration page is always accessible in case the user wants to register a 
 
 ### Future Implementations
 
+* Comment and rate products
+* Contact the Store
+* Login using social accounts
+* Allow superusers to add categories
+* Allow superusers to edit categories
+* Allow superusers to delete categories
+* Allow users and superusers to upload profile image
 
 
 ### Accessibility
