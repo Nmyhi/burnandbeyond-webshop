@@ -177,9 +177,10 @@ I like to include a palette of the colour scheme here, my favourite site for cre
 
 ### Typography
 
-I have chosen Lato google font family.
+I have chosen Lato and Pacifico google font family.
 
 [Lato](https://fonts.google.com/specimen/Lato)
+[Pacifico](https://fonts.google.com/specimen/Pacifico/about)
 
 I chose for this font family because I think it appeares to be something fit well into my project.
 I think it is an accessible friendly font because the characters are uppercase and easy to read.
