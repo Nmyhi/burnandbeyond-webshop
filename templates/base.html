@@ -159,6 +159,28 @@
     {% block content %}
     {% endblock %}
 
+    {% block footer %}
+    <footer class="footer">
+      <div class="row">
+        <div class="col-lg-6 md-6 text-left">
+          <div class="social-links">
+            <!-- Facebook link -->
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            
+            <!-- Instagram link -->
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            
+            <!-- Email link -->
+            <a href="mailto:your@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-6 text-lg-right">
+          <p>&copy; 2024 Burn and Beyond</p>
+        </div>
+      </div>
+    </footer>
+    {% endblock %}
+
     {% block postloadjs %}
     <script type="text/javascript">
       $('.toast').toast('show')
