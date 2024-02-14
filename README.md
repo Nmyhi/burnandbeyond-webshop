@@ -193,8 +193,9 @@ I used font-weight 400.
 
 ### Imagery
 
-I used colourful icon images for this project for the categories and a logo generator for my brand logo.
+I used colourful icon images for this project for the prducts and a logo generator for my brand logo.
 I used a favicon crator for my favicon.
+The product images are my own products I have developed with my laser-cutter and my mom's hand crochet products.
 
 ![Brand Logo](static/images/burn_and_beyond_logo.png)
 ![Favicon](static/images/favicon.ico)

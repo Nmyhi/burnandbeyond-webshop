@@ -7,13 +7,13 @@ body {
     background-size: cover;
     height: calc(100vh-164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 /* New products header */
 
 .new-products-header {
-    margin-top: 20px;
+    margin-top: 100px;
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
@@ -36,17 +36,26 @@ body {
     width: fit-content;
 }
 
+/* logo image */
+.main-logo-link img {
+    width: 80px;
+    height: auto;
+}
+
+/* shop now button */
 .shop-now-button {
     background: black;
-    color: white;
+    color: #0a93d3;
     min-width: 260px;
 }
 
+/* black button */
 .btn-black {
     background: black;
     color: white;
 }
 
+/* black button outline */
 .btn-outline-black {
     background: white;
     color: black !important;
@@ -59,8 +68,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: #0a93d3;
+    color: black;
 }
 
 .text-black {
@@ -72,11 +81,27 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 2px solid black !important;
+}
+
+.color-blue {
+    color: #0a93d3;
+}
+
+.bg-blue {
+    background: #0a93d3;
+}
+
+.border-blue {
+    border: 2px solid #0a93d3 !important;
 }
 
 .bg-black {
     background: #000 !important;
+}
+
+.bg-grey {
+    background: #515151;
 }
 
 
@@ -113,6 +138,10 @@ a.category-badge > span.badge:hover {
 /* adjust searc bar placeholder color */
 
 input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+input[name='q']::after {
     color: #aab7c4;
 }
 
