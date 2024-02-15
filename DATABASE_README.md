@@ -2,7 +2,7 @@
 
 ## Overview
 
-This database design is for BUrn and Beyond Webshop ecommerce site application that is a fully functioning ecommerce website filled with handmade and laser-cut products. The application includes user authentication, products, purchasing system and account management. I have used a relation database (sql) scheme and I have deployed the database to [elephantsql](https://www.elephantsql.com/)
+This database design is for BUrn and Beyond Webshop ecommerce site application that is a fully functioning ecommerce website filled with handmade and laser-cut products. The application includes user authentication, products, purchasing system and account management. I have used a relation database (sql) scheme and I have deployed the database to [elephantsql](https://www.elephantsql.com/).
 
 ![App Preview](URL)
 
@@ -89,22 +89,29 @@ This database design is for BUrn and Beyond Webshop ecommerce site application t
 
 Include an Entity-Relationship (ER) diagram to illustrate the relationships between entities in the database.
 
-![ER Diagram](URL)
+![ER Diagram](/static/images/ER_diagram.png)
 
 ## Sample Queries
 
 Include some sample SQL queries that demonstrate how to interact with the database.
 
 ```sql
--- Example Select Query
-SELECT * FROM User WHERE username = 'example';
+-- Example Retrieve all categories
+SELECT * FROM Category;
 
--- Example Insert Query
-INSERT INTO Expense (amount, description, expense_date, user_id, category_id) VALUES (100.0, 'Groceries', '2023-01-01', 1, 1);
+-- Example Retrieve products with their categories:
+SELECT Product.*, Category.name AS category_name
+FROM Product
+LEFT JOIN Category ON Product.category_id = Category.name;
 
--- Example Update Query
-UPDATE User SET balance = balance - 50.0 WHERE id = 1;
+-- Example Retrieve user profiles with their associated user information:
+SELECT UserProfile.*, User.*
+FROM UserProfile
+INNER JOIN User ON UserProfile.user_id = User.id;
 
--- Example Delete Query
-DELETE FROM Expense WHERE id = 1;
+-- Example Retrieve orders with their associated line items and product details:
+SELECT Order.*, OrderLineItem.*, Product.*
+FROM Order
+LEFT JOIN OrderLineItem ON Order.order_number = OrderLineItem.order_id
+LEFT JOIN Product ON OrderLineItem.product_id = Product.id;
 ```
