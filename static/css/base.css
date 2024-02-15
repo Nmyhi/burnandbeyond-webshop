@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/homepage_background_cropped.webp') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh-164px);
+    height: 100%;
     color: #555;
     background-color: #515151;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -14,7 +14,7 @@ body {
 /* New products header */
 
 .new-products-header {
-    margin-top: 100px;
+    padding-top: 60px;
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
@@ -318,11 +318,10 @@ input[name='q']::after {
 }
 
 footer {
-    position: relative;
+    position: sticky;
     bottom: 0;
     width: 100%;
     padding-right: 50px;
-
 }
 
 footer i {
