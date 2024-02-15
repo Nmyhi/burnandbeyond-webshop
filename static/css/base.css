@@ -9,7 +9,6 @@ body {
     color: #555;
     background-color: #515151;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-    min-height: 100%;
 }
 
 /* New products header */
@@ -40,7 +39,7 @@ body {
 
 /* logo image */
 .main-logo-link img {
-    width: 80px;
+    width: 180px;
     height: auto;
 }
 
@@ -96,6 +95,10 @@ body {
 
 .border-blue {
     border: 2px solid #0a93d3 !important;
+}
+
+.border-bottom-black {
+    border-bottom: 2px solid black !important;
 }
 
 .bg-black {
@@ -176,6 +179,11 @@ input[name='q']::after {
     position: absolute;
     top: -10px;
     right: 36px;
+    z-index: 1000;
+}
+
+.arrow-to-top {
+    z-index: 1000;
 }
 
 /* Convenience classes - colors copied from Bootstrap */
@@ -310,9 +318,20 @@ input[name='q']::after {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    padding-right: 50px;
+
+}
+
+footer i {
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+footer i:hover {
+    color: #000;
 }
 
 /* fixed top navbar only on medium and up */

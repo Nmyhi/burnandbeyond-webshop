@@ -51,11 +51,11 @@
   </head>
   <body>
     <!-- Header with the logo and the name -->
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid fixed-top bg-grey border-bottom-black">
       <div id="topnav" class="row bg-grey pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
-            <img class="my-0" src="{% static 'images/burn_and_beyond_logo_small.png' %}" alt="Burn and Beyond Logo">
+            <img class="my-0" src="{% static 'images/burn_and_beyond_logo.png' %}" alt="Burn and Beyond Logo">
           </a>
         </div>
         <!-- Search bar -->
@@ -73,7 +73,7 @@
             </div>
           </form>
         </div>
-        <!-- My account dropdown menu -->
+        <!-- My account dropdown menu and shopping bag -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown">
@@ -125,8 +125,8 @@
         </nav>
     </div>
     <div id="delivery-banner" class="row text-center">
-        <div class="col bg-blue text-black">
-            <h4 class="logo-font my-1 text-black">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
+        <div class="col col-6 bg-black mx-auto">
+            <h4 class="logo-font my-1 color-blue">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
         </div>            
     </div>
     </header>
@@ -160,18 +160,18 @@
     {% endblock %}
 
     {% block footer %}
-    <footer class="footer">
+    <footer class="footer bg-grey font-weight-bold text-black">
       <div class="row">
         <div class="col-lg-6 md-6 text-left">
           <div class="social-links">
             <!-- Facebook link -->
-            <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook color-blue"></i></a>
             
             <!-- Instagram link -->
-            <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram color-blue"></i></a>
             
             <!-- Email link -->
-            <a href="mailto:your@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:your@email.com" title="Email"><i class="fas fa-envelope color-blue"></i></a>
           </div>
         </div>
         <div class="col-6 col-lg-6 text-lg-right">

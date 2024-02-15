@@ -80,7 +80,7 @@
                                                     </span>
                                             </button>
                                         </div>
-                                        <input class="form-control qty_input" type="number" 
+                                        <input class="form-control qty_input bg-grey font-weight-bold text-black border-blue" type="number" 
                                             name="quantity" value="1" min="1" max="99" 
                                             data-item_id="{{ product.id }}"
                                             id="id_qty_{{ product.id }}">
@@ -98,13 +98,13 @@
                             </div>
                             <!-- Adding an extra top margin only if the product has sizes -->
                             <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <a href="{% url 'products' %}" class="btn btn-outline-black bg-black rounded-0 mt-5">
                                     <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
+                                        <i class="fas fa-chevron-left color-blue"></i>
                                     </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
+                                    <span class="text-uppercase color-blue bg-black">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5 color-blue" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}
