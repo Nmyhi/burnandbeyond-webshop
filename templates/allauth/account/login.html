@@ -7,9 +7,9 @@
 
 {% block inner_content %}
 
-<hr>
+<hr class="product-horizontal-ruler">
 <h2 class="logo-font mb-4 color-blue">{% trans "Sign In" %}</h2>
-<hr>
+<hr class="product-horizontal-ruler">
 
 {% get_providers as socialaccount_providers %}
 
@@ -31,11 +31,11 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p>{% blocktrans %}If you have not created an account yet, then please
+<p class="text-black font-weight-bold">{% blocktrans %}If you have not created an account yet, then please
 <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 {% endif %}
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
+<form class="login text-black font-weight-bold" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
   {{ form|crispy }}
   {% if redirect_field_value %}

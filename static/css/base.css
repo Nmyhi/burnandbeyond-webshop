@@ -259,6 +259,7 @@ input[name='q']::after {
     display: none;
 }
 
+
 .allauth-form-inner-content input::placeholder {
     color: #aab7c4;
 }
@@ -326,11 +327,13 @@ input[name='q']::after {
 }
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding-right: 50px;
     margin-top: 150px;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 footer i {
