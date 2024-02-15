@@ -119,7 +119,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: #515151;
     z-index: -1;
 }
 
@@ -237,6 +237,12 @@ input[name='q']::after {
 
 /* Allauth form formatting */
 
+.full-page-container {
+    max-width: 100% !important;
+    padding-left: 150px;
+    min-height: 100vh;
+}
+
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
@@ -322,6 +328,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding-right: 50px;
+    margin-top: 150px;
 }
 
 footer i {

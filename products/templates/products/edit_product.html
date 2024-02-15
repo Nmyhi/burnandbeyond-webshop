@@ -14,16 +14,16 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="logo-font mb-4">Product Management</h2>
-                <h5 class="text-muted">Edit a Product</h5>
-                <hr>
+                <hr class="product-horizontal-ruler">
+                <h2 class="logo-font mb-4 color-blue">Product Management</h2>
+                <h5 class="color-blue">Edit a Product</h5>
+                <hr class="product-horizontal-ruler">
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2 text-black font-weight-bold" enctype="multipart/form-data">
                     {% csrf_token %}
                     <!-- disable the image field label with the logic below -->
                     {% for field in form %}
