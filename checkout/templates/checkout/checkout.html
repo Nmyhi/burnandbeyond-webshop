@@ -21,21 +21,21 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Checkout</h2>
-            <hr>
+            <hr class="product-horizontal-ruler">
+            <h2 class="logo-font mb-4 text-black font-weight-bold">Checkout</h2>
+            <hr class="product-horizontal-ruler">
         </div>
     </div>
     <!-- Order summary section -->
     <div class="row">
         <div class="col-12 col-lg-6 order-lg-last mb-5">
-            <p class="text-muted">Order Summary ({{ product_count }})</p>
+            <p class="text-black font-weight-bold">Order Summary ({{ product_count }})</p>
             <div class="row">
                 <div class="col-7 offset-2">
-                    <p class="mb-1 mt-0 small text-muted">Item</p>
+                    <p class="mb-1 mt-0 small text-black font-weight-bold">Item</p>
                 </div>
                 <div class="col-3 text-right">
-                    <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                    <p class="mb-1 mt-0 small text-muted font-weight-bold text-black">Subtotal</p>
                 </div>
             </div>
             <!-- products in bag loop -->
@@ -56,45 +56,45 @@
                     </div>
                     <!-- Product info -->
                     <div class="col-7">
-                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                        <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                        <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                        <p class="my-0 text-black font-weight-bold"><strong>{{ item.product.name }}</strong></p>
+                        <p class="my-0 small font-weight-bold text-black">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                        <p class="my-0 small font-weight-bold text-black">Qty: {{ item.quantity }}</p>
                     </div>
                     <!-- Subtotal -->
                     <div class="col-3 text-right">
-                        <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        <p class="my-0 small text-black font-weight-bold">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                 </div>
             {% endfor %}
-            <hr class="my-0">
+            <hr class="my-0 product-horizontal-ruler">
             <!-- Totals and delivery cost for the order -->
             <div class="row text-black text-right">
                 <div class="col-7 offset-2">
-                    <p class="my-0">Order Total:</p>
-                    <p class="my-0">Delivery:</p>
-                    <p class="my-0">Grand Total:</p>
+                    <p class="my-0 text-black font-weight-bold">Order Total:</p>
+                    <p class="my-0 text-black font-weight-bold">Delivery:</p>
+                    <p class="my-0 text-black font-weight-bold">Grand Total:</p>
                 </div>
                 <div class="col-3">
-                    <p class="my-0">${{ total | floatformat:2 }}</p>
-                    <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                    <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                    <p class="my-0 text-black font-weight-bold">${{ total | floatformat:2 }}</p>
+                    <p class="my-0 text-black font-weight-bold">${{ delivery | floatformat:2 }}</p>
+                    <p class="my-0 text-black font-weight-bold"><strong>${{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
         </div>
         <div class="col-12 col-lg-6">
-                <p class="text-muted">Please fill out the form below to complete your order!</p>
+                <p class="text-black font-weight-bold">Please fill out the form below to complete your order!</p>
                 <!-- crispy form for checkout -->
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
                         <!-- Personal details -->
-                        <legend class="fieldset-label small-text-black px-2 w-auto">Details</legend>
+                        <legend class="fieldset-label small-text-black px-2 w-auto text-black font-weight-bold">Details</legend>
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <fieldset class="rounded px-3 mb-5">
                         <!-- Delivery details -->
-                        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
+                        <legend class="fieldset-label small text-black font-weight-bold px-2 w-auto">Delivery</legend>
                         {{ order_form.phone_number | as_crispy_field }}
                         {{ order_form.street_address1 | as_crispy_field }}
                         {{ order_form.street_address2 | as_crispy_field }}
@@ -118,7 +118,7 @@
                     </fieldset>
                     <!-- checkout information -->
                     <fieldset class="px-3">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                        <legend class="fieldset-label small text-black px-2 w-auto font-weight-bold">Payment</legend>
                         <!-- A Stripe card element will go here -->
                         <div class="mb-3" id="card-element"></div>
 

@@ -326,6 +326,10 @@ Product management is available for superusers
 
 ![Product Edit and delete buttons](URL)
 
+Users can edit their default shipping details.
+
+![User Page](URL)
+
 ### Future Implementations
 
 * Comment and rate products

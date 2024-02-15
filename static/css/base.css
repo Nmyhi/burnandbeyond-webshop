@@ -124,8 +124,8 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
+    background: #0a93d3 !important;
+    color: #000 !important;
 }
 
 .btt-button {
@@ -145,11 +145,11 @@ a.category-badge > span.badge:hover {
 /* adjust searc bar placeholder color */
 
 input[name='q']::placeholder {
-    color: #aab7c4;
+    color: #515151;
 }
 
 input[name='q']::after {
-    color: #aab7c4;
+    color: #515151;
 }
 
 /* Toasts */
@@ -159,10 +159,12 @@ input[name='q']::after {
     top: 72px;
     right: 15px;
     z-index: 9999;
+    background: #0a93d3;
 }
 
 .custom-toast {
     overflow: visible;
+    background: #0a93d3;
 }
 
 .toast-capper {
@@ -286,9 +288,9 @@ input[name='q']::after {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
+	color: #000;
+    background-color: #0a93d3;
+    border-color: #515151;
 }
 
 .allauth-form-inner-content a {
