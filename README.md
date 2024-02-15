@@ -169,7 +169,7 @@ I am going to go into details in the user stories!
 
 ### Colour Scheme
 
-I have chosen a modern sceme for this project and tried to make it interesting.
+I have chosen a modern sceme for this project and tried to make it interesting, fun and special.
 
 I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
 
@@ -183,8 +183,7 @@ I have chosen Lato and Pacifico google font family.
 [Pacifico](https://fonts.google.com/specimen/Pacifico/about)
 
 I chose for this font family because I think it appeares to be something fit well into my project.
-I think it is an accessible friendly font because the characters are uppercase and easy to read.
-I used font-weight 400.
+I think it is an accessible friendly font because the characters are easy to read.
 
 ![Pacifico font](/static/images/pacifico_font.png)
 ![Lato font](/static/images/lato_font.png)
@@ -198,33 +197,39 @@ I used a favicon crator for my favicon.
 The product images are my own products I have developed with my laser-cutter and my mom's hand crochet products.
 
 ![Brand Logo](static/images/burn_and_beyond_logo.png)
+
 ![Favicon](static/images/favicon.ico)
+
+I have used an online favicon creator for the favicon and logo maker to create the shop logo.
 
 [Favicon creator](https://favicon.io/)
 [Logo Maker](https://logomakr.com/)
-[Free Icons](https://www.freepik.com)
 
 ### Wireframes
 
 ### Desktop view wireframes
 
-[Home page](URL)
+[Home page](/static/images/home%20screen%20desktop.png)
 
-[Userpage](URL)
+[Product Page](/static/images/Products%20desktop.png)
 
-[Login page](URL)
+[Login page](/static/images/Sign%20in%20desktop.png)
 
-[Resigter page](URL)
+[Resigter page](/static/images/Sign%20Up%20Desktop.png)
+
+[Log Out Page](/static/images/Sign%20out%20desktop.png)
 
 ### Mobile and tablet view wireframes
 
-[Home page](URL)
+[Home page](/static/images/home%20screen%20mobile_tablet.png)
 
-[User page](URL)
+[Product Page](/static/images/Products%20Mobile.png)
 
-[Login page](URL)
+[Login page](/static/images/Sign%20in%20mobile.png)
 
-[Register page](URL)
+[Register page](/static/images/Sign%20up%20mobile.png)
+
+[Log Out Page](/static/images/sign%20out%20mobile.png)
 
 There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
 
@@ -238,57 +243,88 @@ The website contains:
 
 - Home page
 - User page
-- Login page/Logout
-- Register
+- Products Page
+- Shopping Bag page
+- Checkout Page
+- Login page
+- Logout Page
+- Register Page
 
-These pages DOM are modified by the python code flask and jinja2 syntax.
+These pages DOM are modified by the python code Django and jinja2 template syntax.
 
 All pages on the website are responsive and have:
 
 - A favicon in the browser tab.
 
-![Favicon tab](/budgetpal/static/images/favicon_tab.png)
+![Favicon tab](/static/images/favicon_tab.png)
 
 - A header with brand logo and navbar.
 
-![Navbar screenshot](/budgetpal/static/images/navbar.png)
+![Navbar screenshot](/static/images/navbar.png)
 
 - A footer with my own social links.
 
-![Footer screenshot](/budgetpal/static/images/footer.png)
+![Footer screenshot](/static/images/footer.png)
 
 - Home page:
 
-The home page welcome the user logged in or ask the user to log in if there is no user logged in yet:
-
-- User logged in:
-  ![User logged in home screen](/budgetpal/static/images/homepage_user_logged_in.png)
-
-- User logged out:
-  ![User logged out home screen](/budgetpal/static/images/homepage_user_logged_out.png)
+![Home Page](/static/images/home_page.png)
 
 - User Page:
 
-The user pages displays the user's balance Savings and expenses when the user is logged in and showing the control buttons as well. The user can edit delete and add expenses and income, savings and add new categories:
+![User Page](URL)
 
-- User page logged in:
-  ![User logged in userpage](/budgetpal/static/images/userpage_logged_in.png)
+- Product Page:
 
-- expenses form:
-  ![expenses form](/budgetpal/static/images/expense_form.png)
-- Userpage logged out:
-  ![User logged out in userpage](/budgetpal/static/images/userpage_logged_out.png)
+![Product Page](URL)
+
+- Shopping Bag Page:
+
+![Shopping Bag](URL)
+
+- Checkout Page:
+
+![Checkout Page](URL)
+
 - Login page:
 
-The login page is accessible from the navbar if a user is not logged in. If a user is logged in the navbar displays the logout option only:
+![Checkout Page](URL)
 
-- Login page user logged out:
-  ![Login page](/budgetpal/static/images/login_page_user_not_logged_in.png)
+- Logout Page:
 
-- Registration page:
+![Logout Page](URL)
 
-The resistration page is always accessible in case the user wants to register a new account
-![Registration page](/budgetpal/static/images/registration_page.png)
+- Register Page:
+
+![Register Page](URL)
+
+On the Register Page Users can filter by different attributes.
+
+![Product Page filter](URL)
+
+In the Shopping bag users can update their shopping bag with quantity
+
+![Shopping Bag](URL)
+
+Througout the whole site nice toasts notify the users throughout 3 different messages.
+
+- Success message:
+
+![Success message](URL)
+
+- Warning message:
+
+![Warning message](URL)
+
+- Error message:
+
+![Error message](URL)
+
+Product management is available for superusers
+
+![Product Managment](URL)
+
+![Product Edit and delete buttons](URL)
 
 ### Future Implementations
 

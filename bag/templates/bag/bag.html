@@ -17,9 +17,9 @@
     <div class="container mb-2">
         <div class="row">
             <div class="col">
-                <hr>
-                    <h2 class="logo-font mb-4">Shopping Bag</h2>
-                <hr>
+                <hr class="product-horizontal-ruler">
+                    <h2 class="logo-font mb-4 color-blue">Shopping Bag</h2>
+                <hr class="product-horizontal-ruler">
             </div>
         </div>
 
@@ -50,13 +50,13 @@
                                         {% endif %}
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                        <p class="my-0 text-black font-weight-bold"><strong>{{ item.product.name }}</strong></p>
                                         <!-- display the chosen item size if have one -->
-                                        <p class="my-0"><strong>Size:</strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                                        <p class="my-0 small text-muted">SKU: {{ item.produck.sku|upper }}</p>
+                                        <p class="my-0 text-black font-weight-bold"><strong>Size:</strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                                        <p class="my-0 small text-muted text-black font-weight-bold">SKU: {{ item.produck.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                        <p class="my-0 text-black font-weight-bold">${{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         <!-- Form to update product quantities and sizes (if apllicable) from the bag -->
