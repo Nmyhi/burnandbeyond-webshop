@@ -79,6 +79,7 @@ I am going to go into details in the user stories!
 
 #### Client Goals
 
+* Navigate on the site.
 * Register an account.
 * Log-in to the account.
 * Log-out of an account.
@@ -98,6 +99,7 @@ I am going to go into details in the user stories!
 
 #### First Time Visitor Goals
 
+* Navigate on the site.
 * Register an account.
 * Log-in to the account.
 * Log-out of an account.
@@ -119,6 +121,7 @@ I am going to go into details in the user stories!
 
 #### Returning Visitor Goals
 
+* Navigate on the site
 * Register an account.
 * Log-in to the account.
 * Log-out of an account.
@@ -140,6 +143,7 @@ I am going to go into details in the user stories!
 
 #### Frequent Visitor Goals
 
+* Navigate on the site
 * Register an account.
 * Log-in to the account.
 * Log-out of an account.
