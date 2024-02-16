@@ -327,7 +327,6 @@ input[name='q']::after {
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     padding-right: 50px;
