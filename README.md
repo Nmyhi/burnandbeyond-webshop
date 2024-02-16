@@ -177,7 +177,7 @@ I have chosen a modern sceme for this project and tried to make it interesting, 
 
 I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
 
-![Colour Scheme](URL).
+![Colour Scheme](static/images/burnandbeyond_colors.png).
 
 ### Typography
 
