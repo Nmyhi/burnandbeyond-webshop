@@ -416,12 +416,25 @@ footer i:hover {
     }
 
     footer {
-        position: relative;
+        position:static;
         margin-top: 0;
+        bottom: 0;
     }
 
     footer p {
         visibility: hidden;
         height: 0;
+    }
+
+    .container {
+        padding-bottom: 170px;
+    }
+
+    button {
+        padding: 0;
+    }
+
+    td {
+        font-size: 0.5rm;
     }
 }
