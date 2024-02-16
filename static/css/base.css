@@ -416,7 +416,6 @@ footer i:hover {
     }
 
     footer {
-        position:static;
         margin-top: 0;
         bottom: 0;
     }
@@ -434,7 +433,5 @@ footer i:hover {
         padding: 0;
     }
 
-    td {
-        font-size: 0.5rm;
-    }
+    
 }
