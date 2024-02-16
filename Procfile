@@ -1,0 +1,1 @@
+web: gunicorn burn_and_beyond_webshop.wsgi:application
