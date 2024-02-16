@@ -60,48 +60,113 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Testing User Stories
 
-Client Goals
+- Client Goals
 
-- To help the clients to have a better understanding of their spending.
-- To navigate in the menu.
-- To be able to view the site on a range of device sizes.
-- To allow people to sign up, log in and log out on the site the site.
-- To be able to add records of categories, expenses, savings and incomes.
-- To be able to modify expenses, savings and incomes.
-- To be able to delete expenses, savings and incomes.
-- To be able to see the updated Balance and Savings.
-- To be able to see the details of the expenses.
+* Navigate on the Site.
+* Register an account.
+* Log-in to the account.
+* Log-out of an account.
+* Receive an email confirmation after registering.
+* Quickly identify product deals.
+* View a list of products.
+* Have a personalised user profile.
+* Sort a list of available products.
+* Sort a specific category of products
+* Sort multiple categories of products simultaneously.
+* Search for products by name and description.
+* Easily select the quantity and size (if avaliable).
+* Place an order.
+* Review and list previous orders.
+* Get email confirmation about the order placed.
+* Contact the shop via form.
 
-First Time Visitor Goals
+- First Time Visitor Goals
 
-- To be able to create an account, log in or log out.
-- To be able to create read edit and delete expenses.
-- To be able to contact the developer in case of ideas to develop the project
+* Navigate on the Site.
+* Register an account.
+* Log-in to the account.
+* Log-out of an account.
+* Receive an email confirmation after registering.
+* Quickly identify product deals.
+* View a list of products.
+* Have a personalised user profile.
+* Sort a list of available products.
+* Sort a specific category of products
+* Sort multiple categories of products simultaneously.
+* Search for products by name and description.
+* Easily select the quantity and size (if avaliable).
+* Place an order.
+* Review and list previous orders
+* Get email confirmation about the order placed.
+* Leave comment on Products.
+* Leave a rating on products.
+* Contact the shop via form.
 
-Returning Visitor Goals
+- Returning Visitor Goals
 
-- To be able to create an account, log in or log out.
-- To be able to create read edit and delete expenses.
-- To be able to contact the developer in case of ideas to develop the project.
+* Navigate on the Site.
+* Register an account.
+* Log-in to the account.
+* Log-out of an account.
+* Receive an email confirmation after registering.
+* Quickly identify product deals.
+* View a list of products.
+* Have a personalised user profile.
+* Sort a list of available products.
+* Sort a specific category of products
+* Sort multiple categories of products simultaneously.
+* Search for products by name and description.
+* Easily select the quantity and size (if avaliable).
+* Place an order.
+* Review and list previous orders
+* Get email confirmation about the order placed.
+* Leave comment on Products.
+* Leave a rating on products.
+* Contact the shop via form.
 
-Frequent Visitor Goals
+- Frequent Visitor Goals
 
-- To be able to create an account, log in or log out.
-- To be able to create read edit and delete expenses.
-- To be able to contact the developer in case of ideas to develop the project.
-- To Gain insights into the user's spending habits and financial patterns to make informed decisions.
-- Set achievable financial goals and track your progress toward a secure financial future.
+* Navigate on the Site.
+* Register an account.
+* Log-in to the account.
+* Log-out of an account.
+* Receive an email confirmation after registering.
+* Quickly identify product deals.
+* View a list of products.
+* Have a personalised user profile.
+* Sort a list of available products.
+* Sort a specific category of products
+* Sort multiple categories of products simultaneously.
+* Search for products by name and description.
+* Easily select the quantity and size (if avaliable).
+* Place an order.
+* Review and list previous orders
+* Get email confirmation about the order placed.
+* Leave comment on Products.
+* Leave a rating on products.
+* Contact the shop via form.
+
+---
 
 | Goals                                                                   | How are they achieved?                                                                           | Image                                                                              |
 | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
-| To help the clients to have a better understanding of their spending.   | I have achieved this by displaying the expenses and updating the balance and savings of the user | [Userpage](/budgetpal/static/images/userpage_logged_in.png)                        |
-| To navigate in the menu.                                                | I have made a nav bar to easily navigate in the menu                                             | [Navbar](/budgetpal/static/images/navbar.png)                                      |
-| To allow people to sign up, log in and log out on the site the site.    | I have achieved this by using Flask-login                                                        | [Flask-login documentation](https://flask-login.readthedocs.io/en/latest/)         |
-| To be able to add records of categories, expenses, savings and incomes. | I have achieved this by adding buttons to the userpage                                           | [Control buttons on the userpage](/budgetpal/static/images/userpage_logged_in.png) |
-| To be able to modify expenses, savings and incomes.                     | I have achieved this goal by adding edit button to the expenses savings and incomes              | [Userpage](/budgetpal/static/images/userpage_logged_in.png)                        |
-| To be able to delete expenses, savings and incomes.                     | I have achieved this goal by adding delete button to the expenses savings and incomes            | [Userpage](/budgetpal/static/images/userpage_logged_in.png)                        |
-| To be able to see the updated Balance and Savings.                      | I have achieved this goal by displaying these information on the user site                       | [Userpage](/budgetpal/static/images/userpage_logged_in.png)                        |
-| To be able to see the details of the expenses.                          | I have achieved this goal by displaying these informations in the expenses rows                  | [Userpage](/budgetpal/static/images/userpage_logged_in.png)                        |
+| Navigate on the site. | I have achieved this with a main navigation bar. |  [Navbar](URL) |
+| Register an account.  | I have crated a fully functioning registration module with authentication.  | [Register Page](URL)  |
+| Log-in to the account.  | I have created a login page.  | [Login Page](URL) |
+| Log-out of an account. | I have created a logout page.  | [Logout Page](URL) |
+| Quickly identify product deals. | I have created a deals category | [Deals Category](URL) |
+| View a list of products.  | I have created a products page  | [Products Page](URL)  |
+| Have a personalised user profile. | I have created a user profile where users can store their default shipping details.| [User Page](URL)  |
+| Sort a list of available products.  | I have displayed the available products on the products page. | [Sorting Bar](URL)  |
+| Sort multiple categories of products simultaneously.  | Users can sort products on the products page by various attributes. | [Display Multiple categories](URL)  |
+| Search for products by name and description.  | I have achieved this goal by implementing a search bar. | [Search Bar](URL) |
+| Easily select the quantity and size (if avaliable). | I have implemented a bar where users can increment and decrement quantities.  | [Quantity Bar](URL) |
+| Place an order. | I have created a checkout system using stripe and stripe webhooks.  | [Checkout Page](URL)  |
+| Review and list previous orders.  | I have implemented previous orders in the user page.  | [Userpage](URL) |
+| Get email confirmation about the order placed.  | I have failed to implement real email.| N/A |
+| Contact the shop via email. | I have achieved this by adding an email link to the footer.| [Footer](URL)  |
+
+---
 
 ### Full Testing
 
@@ -121,67 +186,52 @@ Each device tested the site using the following browsers:
 
 Additional testing was taken by friends and family on a variety of devices and screen sizes.
 
-| Feature                                                                     | Expected Outcome                                                                    | Testing Performed                            | Result                                                                                                                        | Pass/Fail |
+| Feature | Expected Outcome| Testing Performed | Result  | Pass/Fail |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `Home page`                                                                 |
-| Navbar Brand logo                                                           | Redirects to the home page                                                          | Click the brans logo                         | redirects to the home page                                                                                                    | Pass      |
-| Navbar Home link                                                            | Redirects to the home page                                                          | Click the link                               | redirects to the home page                                                                                                    | Pass      |
-| Navbar User link                                                            | Redirects to the user page                                                          | Click the link                               | redirects to the user page                                                                                                    | Pass      |
-| Navbar login link                                                           | Redirects to the login page if there is no user logged in                           | Click the link                               | redirects to the login page                                                                                                   | Pass      |
-| Navbar logout link                                                          | logs the user out if there is one logged in                                         | Click the link                               | logs the user out                                                                                                             | Pass      |
-| Navbar Register                                                             | Redirects to the registration page                                                  | Click the link                               | redirects to the registration page                                                                                            | Pass      |
-| Display and welcome the user if one is logged in                            | Check Home page after login                                                         | Welcomes the user                            | Welcomes the user after login                                                                                                 | Pass      |
-| Warning of no user logged in                                                | Warns the user to log in                                                            | Check the Home page when nobody is logged in | Warns the user to log in                                                                                                      | Pass      |
-| Display log out link if a user is logged in and log out the user if clicked | logs the user out when logout is clicked                                            | Click the link                               | logs the user out                                                                                                             | Pass      |
-| Footer-Facebook logo                                                        | Opens my facebook page in a new tab                                                 | Click the facebook logo                      | Opens my facebook page in a new tab                                                                                           | Pass      |
-| Footer-mail logo                                                            | Opens sending mail in a new tab                                                     | Click the mail logo                          | opens mails in a new tab                                                                                                      | Pass      |
-| Footer-Whatsapp logo                                                        | Opens my whatsapp contact in a new tab                                              | Click the whatsapp logo                      | Opens my whatsapp contact in a new tab                                                                                        | Pass      |
-| `User page`                                                                 |
-| Navbar Brand logo                                                           | Redirects to the home page                                                          | Click the brans logo                         | redirects to the home page                                                                                                    | Pass      |
-| Navbar Home link                                                            | Redirects to the home page                                                          | Click the link                               | redirects to the home page                                                                                                    | Pass      |
-| Navbar User link                                                            | Redirects to the user page                                                          | Click the link                               | redirects to the user page                                                                                                    | Pass      |
-| Navbar login link                                                           | Redirects to the login page if there is no user logged in                           | Click the link                               | redirects to the login page                                                                                                   | Pass      |
-| Navbar logout link                                                          | logs the user out if there is one logged in                                         | Click the link                               | logs the user out                                                                                                             | Pass      |
-| Navbar Register                                                             | Redirects to the registration page                                                  | Click the link                               | redirects to the registration page                                                                                            | Pass      |
-| User page add income button                                                 | Opens the income form, adds an income to the expenses, calculates the balance       | Click the link                               | Opens the income form, adds an income to the expense, calculates the balance after submission                                 | Pass      |
-| User page add expense button                                                | Opens the add expense form, adds an expense to the expenses, calculates the balance | Click the link                               | Opens the add expense form, adds an expense to the expenses, calculates the balance after submission                          | Pass      |
-| User page add category button                                               | Opens the add category form, adds a new category to the categories                  | Click the link                               | Opens the add category form, adds a new category to the categories after submission                                           | Pass      |
-| User page logout button                                                     | Logs the user out                                                                   | Click the link                               | Logs the user out                                                                                                             | Pass      |
-| Footer-Facebook logo                                                        | Opens my facebook page in a new tab                                                 | Click the facebook logo                      | Opens my facebook page in a new tab                                                                                           | Pass      |
-| Footer-mail logo                                                            | Opens sending mail in a new tab                                                     | Click the mail logo                          | opens mails in a new tab                                                                                                      | Pass      |
-| Footer-Whatsapp logo                                                        | Opens my whatsapp contact in a new tab                                              | Click the whatsapp logo                      | Opens my whatsapp contact in a new tab                                                                                        | Pass      |
-| `Login page`                                                                |
-| Navbar Brand logo                                                           | Redirects to the home page                                                          | Click the brans logo                         | redirects to the home page                                                                                                    | Pass      |
-| Navbar Home link                                                            | Redirects to the home page                                                          | Click the link                               | redirects to the home page                                                                                                    | Pass      |
-| Navbar User link                                                            | Redirects to the user page                                                          | Click the link                               | redirects to the user page                                                                                                    | Pass      |
-| Navbar login link                                                           | Redirects to the login page if there is no user logged in                           | Click the link                               | redirects to the login page                                                                                                   | Pass      |
-| Navbar Register                                                             | Redirects to the registration page                                                  | Click the link                               | redirects to the registration page                                                                                            | Pass      |
-| Login page                                                                  | Logs the user in using email address and password                                   | Fill the form up and login                   | Logs the user in using email address and password, remember me has to be clicked on, unfortunately not displaying after click | Pass      |
-| Footer-Facebook logo                                                        | Opens my facebook page in a new tab                                                 | Click the facebook logo                      | Opens my facebook page in a new tab                                                                                           | Pass      |
-| Footer-mail logo                                                            | Opens sending mail in a new tab                                                     | Click the mail logo                          | opens mails in a new tab                                                                                                      | Pass      |
-| Footer-Whatsapp logo                                                        | Opens my whatsapp contact in a new tab                                              | Click the whatsapp logo                      | Opens my whatsapp contact in a new tab                                                                                        | Pass      |
-| `Register page`                                                             |
-| Navbar Brand logo                                                           | Redirects to the home page                                                          | Click the brans logo                         | redirects to the home page                                                                                                    | Pass      |
-| Navbar Home link                                                            | Redirects to the home page                                                          | Click the link                               | redirects to the home page                                                                                                    | Pass      |
-| Navbar User link                                                            | Redirects to the user page                                                          | Click the link                               | redirects to the user page                                                                                                    | Pass      |
-| Navbar login link                                                           | Redirects to the login page if there is no user logged in                           | Click the link                               | redirects to the login page                                                                                                   | Pass      |
-| Navbar Register                                                             | Redirects to the registration page                                                  | Click the link                               | redirects to the registration page                                                                                            | Pass      |
-| Register page                                                               | Registers the user using email address and password, confirm password               | Fill the form up and Register                | Registers the user using email address and password, confirm password                                                         | Pass      |
-| Footer-Facebook logo                                                        | Opens my facebook page in a new tab                                                 | Click the facebook logo                      | Opens my facebook page in a new tab                                                                                           | Pass      |
-| Footer-mail logo                                                            | Opens sending mail in a new tab                                                     | Click the mail logo                          | opens mails in a new tab                                                                                                      | Pass      |
-| Footer-Whatsapp logo                                                        | Opens my whatsapp contact in a new tab                                              | Click the whatsapp logo                      | Opens my whatsapp contact in a new tab                                                                                        | Pass      |
+| `Nav Bar` |
+| Navbar Brand logo | Redirects to the home page | Click the brans logo | redirects to the home page | Pass |
+| Search Bar | Displays the products with keyword contained in their name or description | type a keyword in and hit enter or click on the button | works as expected | Pass |
+| My Account | display a dropdown menu with available options | Click the accounts icon | works as expected | Pass |
+| Shopping Bag | Redirects to the shopping bag | Click the shopping bag logo | works as expected | Pass |
+| Products filter dropdown menus | each option displays various options | Click the options | works as expected | Pass |
+| `Footer` |
+| Facebook Logo | Redirects to the site's facebook page | Click the facebook logo | redirects to the facebook page opened in a new tab | Pass |
+| Instagram Logo | Redirects to the site's instagram page | Click the instagram logo | redirects to the instagram page in a new tab page | Pass |
+| Email Logo | Opens options for the user to send an email | Click the email logo | Starts an email request | Pass |
+| `Home Page` |
+| Shop Now button | Redirects to the Products page | Click the button | works as expected | Pass |
+| `Products Page` |
+| Product cards | Display the image of a product with details and if clicked redirects to the product details page | Click the card | works as expected | Pass |
+| `Product details Page` |
+| Product details | Allow users to view the product details and put it in the shopping bag with the desired quantity | Click add to bag or keep shopping | works as expected | Pass |
+| `Shopping bag` |
+| Shopping Bag Page | Allow users to view the product details, modify the quantity if needed and check out | Modify the quantities and click checkout | works as expected | Pass |
+| `Checkout Page` |
+| Checkout Page and payment | Allow users to add shipping details, view the charge and to place an order | fill the form up and after added the card details place an order | works as expected | Pass |
+| `Sign Up Page` |
+| Registration module | Allow users to register an account via form | fill the form up and register | works as expected | Pass |
+| `Login Page` |
+| Login module | Allow users to log in with a previously created account | fill the form up and log in | works as expected | Pass |
+| `Logout Page` |
+| Logout module | Allow users to log out from a previously created account | fill the form up and log out | works as expected | Pass |
+
+I have tested all these main mechanics of the page and I would like to highlight some of the features I have not added in details in the above table.
+
+- If a superuser logs in they have the right to add a product which is called Product Management and it is only visible if a superuser is logged in.
+
+- Throughout the whole system there are toasts provide information for the user's about successfull or failed attempts. In some cases I have coded warning messages as well, all of these work perfectly, I did not find a bug.
+
+- Updating quantities and filtering all works, the system automatically calculates the delivery cost and the grand total as well.
+
+- On the products and product details site edit and delete buttons displayed for superusers only.
 
 ## BUGS
 
 ### Known Bugs
 
-- On the login page the remember me has bo be clicked on however after the click it is not visible
+- I have switched the sending real emails off because I could not make it work.
+
 
 ### Solved Bugs
 
-- Flask- login issues
-- category logo url issues
-- responsive design issues
-- model issues
-
-All of these bugs have been resolved during developement and commits have been created.
+Most of my bugs was responsiveness related front end bugs which I mostly debugged with additional css styling and media queries.
