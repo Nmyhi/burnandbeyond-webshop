@@ -1,6 +1,6 @@
 # Burn and Beyond Webshop - TESTING
 
-This is a memory game web application which is fully responsive. This site has been built to showcase my initial javaScript skills as my very first JavaScript code!
+This is the manual testing documentation for Burn and Beyond Webshop!
 
 ![App Preview](URL)
 
