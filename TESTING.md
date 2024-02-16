@@ -31,27 +31,49 @@ The automated Testing includes all the testing that is carried out by test code 
 ### PEP8 validation
 
 [bag apps.py](static/images/bag_apps_py_validation.png)
+
 [bag contexts.py](static/images/bag_contexts_py_validation.png)
+
 [bag urls.py](static/images/bag_urls_py_validation.png)
+
 [bag views.py](static/images/bag_views_py_validation.png)
+
 [base.css](static/images/base_css_validation.png)
+
 [checkout admin.py ](static/images/checkout_admin_py_validation.png)
+
 [checkout.css](static/images/checkout_css_validation.png)
+
 [checkout forms.py](static/images/checkout_forms_py_validation.png)
+
 [checkout models.py](static/images/checkout_models_py_validation.png)
+
 [checkout urls.py](static/images/checkout_urls_py_validation.png)
+
 [checkout views.py](static/images/checkout_views_py_validation.png)
+
 [checkout webhook_handler.py](static/images/checkout_webhook_handler_py_validation.png)
+
 [checkout webhooks.py](static/images/checkout_webhooks_py_validation.png)
+
 [products admin.py](static/images/products_admin_py_validation.png)
+
 [products forms.py](static/images/products_form_py_validation.png)
+
 [products models.py](static/images/products_models_py_validation.png)
+
 [products urls.py](static/images/products_urls_py_validation.png)
+
 [products views.py](static/images/products_views_py_validation.png)
+
 [profiles forms.py](static/images/profile_forms_py_validation.png)
+
 [profiles models.py](static/images/profiles_models_py_validation.png)
+
 [profiles views.py](static/images/profiles_views_py_validation.png)
+
 [root urls.py](static/images/root_urls_py_validation.png)
+
 [settings.py](static/images/settings_py_validation.png)
 
 
@@ -62,11 +84,13 @@ I tested the home page and the products page. I chose to test the products page 
 
 - Home page test
   [Home Page Lighthouse desktop view](static/images/lighthouse_home_desktop.png)
+  
   [Home Page Lighthouse mobile view](static/images/lighthouse_home_mobile.png)
 
 - Products page test
 
   [Products Page Lighthouse desktop view](static/images/lighthouse_products_desktop.png)
+
   [Products Page Lighthouse mobile view](static/images/lighthouse_products_mobile.png)
 
 ## MANUAL TESTING

@@ -352,8 +352,6 @@ Heroku - To deploy the project.
 
 Elephant SQL - To host my database.
 
-[ChatGpt](https://chat.openai.com/) To debug and ask about flask syntask and solutions.
-
 [Tiny PNG](https://tinypng.com/) To compress images.
 
 [Birme](https://www.birme.net/) To resize images and change to webp format.
