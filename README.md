@@ -260,47 +260,47 @@ All pages on the website are responsive and have:
 
 - A favicon in the browser tab.
 
-![Favicon tab](/static/images/favicon_tab.png)
+[Favicon tab](/static/images/favicon_tab.png)
 
 - A header with brand logo and navbar.
 
-![Navbar screenshot](/static/images/navbar.png)
+[Navbar screenshot](/static/images/navbar.png)
 
 - A footer with my own social links.
 
-![Footer screenshot](/static/images/footer.png)
+[Footer screenshot](/static/images/footer.png)
 
 - Home page:
 
-![Home Page](/static/images/home_page.png)
+[Home Page](/static/images/home_page.png)
 
 - User Page:
 
-![User Page](static/images/userpage.png)
+[User Page](static/images/userpage.png)
 
 - Product Page:
 
-![Product Page](static/images/productspage.png)
+[Product Page](static/images/productspage.png)
 
 - Shopping Bag Page:
 
-![Shopping Bag](static/images/shoppingbag.png)
+[Shopping Bag](static/images/shoppingbag.png)
 
 - Checkout Page:
 
-![Checkout Page](static/images/checkoutpage.png)
+[Checkout Page](static/images/checkoutpage.png)
 
 - Login page:
 
-![Login Page](static/images/loginpage.png)
+[Login Page](static/images/loginpage.png)
 
 - Logout Page:
 
-![Logout Page](static/images/logoutpage.png)
+[Logout Page](static/images/logoutpage.png)
 
 - Register Page:
 
-![Register Page](static/images/registerpage.png)
+[Register Page](static/images/registerpage.png)
 
 ### Future Implementations
 
