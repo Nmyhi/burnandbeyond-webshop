@@ -4,7 +4,7 @@
 
 This database design is for BUrn and Beyond Webshop ecommerce site application that is a fully functioning ecommerce website filled with handmade and laser-cut products. The application includes user authentication, products, purchasing system and account management. I have used a relation database (sql) scheme and I have deployed the database to [elephantsql](https://www.elephantsql.com/).
 
-![App Preview](URL)
+![App Preview](static/images/amiresponsive.png)
 
 [Live link](URL)
 

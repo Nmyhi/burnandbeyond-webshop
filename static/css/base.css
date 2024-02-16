@@ -383,11 +383,7 @@ footer i:hover {
     }
 
     #delivery-banner h4 {
-        font-size: 1rem;
-    }
-
-    footer {
-        height: 50px;
+        font-size: 0.5rem;
     }
 
     .navbar-toggler {
@@ -417,6 +413,7 @@ footer i:hover {
     footer {
         margin-top: 0;
         bottom: 0;
+        height: 50px;
     }
 
     footer p {

@@ -2,7 +2,7 @@
 
 Hello and thank you for choosing Burn and Beyond Webshop for your laser-cut product needs! We are thrilled to introduce you to a world of precision, creativity, and craftsmanship through our unique range of laser-cut products. Whether you're looking to add a touch of elegance to your home, find the perfect gift, we have something special for everyone.
 
-![App Preview](URL)
+![App Preview](static/images/amiresponsive.png)
 
 [Live link](URL)
 
@@ -276,63 +276,31 @@ All pages on the website are responsive and have:
 
 - User Page:
 
-![User Page](URL)
+![User Page](static/images/userpage.png)
 
 - Product Page:
 
-![Product Page](URL)
+![Product Page](static/images/productspage.png)
 
 - Shopping Bag Page:
 
-![Shopping Bag](URL)
+![Shopping Bag](static/images/shoppingbag.png)
 
 - Checkout Page:
 
-![Checkout Page](URL)
+![Checkout Page](static/images/checkoutpage.png)
 
 - Login page:
 
-![Checkout Page](URL)
+![Login Page](static/images/loginpage.png)
 
 - Logout Page:
 
-![Logout Page](URL)
+![Logout Page](static/images/logoutpage.png)
 
 - Register Page:
 
-![Register Page](URL)
-
-On the Register Page Users can filter by different attributes.
-
-![Product Page filter](URL)
-
-In the Shopping bag users can update their shopping bag with quantity
-
-![Shopping Bag](URL)
-
-Througout the whole site nice toasts notify the users throughout 3 different messages.
-
-- Success message:
-
-![Success message](URL)
-
-- Warning message:
-
-![Warning message](URL)
-
-- Error message:
-
-![Error message](URL)
-
-Product management is available for superusers
-
-![Product Managment](URL)
-
-![Product Edit and delete buttons](URL)
-
-Users can edit their default shipping details.
-
-![User Page](URL)
+![Register Page](static/images/registerpage.png)
 
 ### Future Implementations
 

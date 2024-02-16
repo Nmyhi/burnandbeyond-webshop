@@ -2,7 +2,7 @@
 
 This is the manual testing documentation for Burn and Beyond Webshop!
 
-![App Preview](URL)
+![App Preview](static/images/amiresponsive.png)
 
 [Live link](URL)
 
@@ -30,31 +30,44 @@ The automated Testing includes all the testing that is carried out by test code 
 
 ### PEP8 validation
 
-[init_py_validation](URL)
-[run_py_vlidation](URL)
-[forms_py_valiation](URL)
-[models_py_validation](URL)
-[routes_py_validation](URL)
+[bag apps.py](static/images/bag_apps_py_validation.png)
+[bag contexts.py](static/images/bag_contexts_py_validation.png)
+[bag urls.py](static/images/bag_urls_py_validation.png)
+[bag views.py](static/images/bag_views_py_validation.png)
+[base.css](static/images/base_css_validation.png)
+[checkout admin.py ](static/images/checkout_admin_py_validation.png)
+[checkout.css](static/images/checkout_css_validation.png)
+[checkout forms.py](static/images/checkout_forms_py_validation.png)
+[checkout models.py](static/images/checkout_models_py_validation.png)
+[checkout urls.py](static/images/checkout_urls_py_validation.png)
+[checkout views.py](static/images/checkout_views_py_validation.png)
+[checkout webhook_handler.py](static/images/checkout_webhook_handler_py_validation.png)
+[checkout webhooks.py](static/images/checkout_webhooks_py_validation.png)
+[products admin.py](static/images/products_admin_py_validation.png)
+[products forms.py](static/images/products_form_py_validation.png)
+[products models.py](static/images/products_models_py_validation.png)
+[products urls.py](static/images/products_urls_py_validation.png)
+[products views.py](static/images/products_views_py_validation.png)
+[profiles forms.py](static/images/profile_forms_py_validation.png)
+[profiles models.py](static/images/profiles_models_py_validation.png)
+[profiles views.py](static/images/profiles_views_py_validation.png)
+[root urls.py](static/images/root_urls_py_validation.png)
+[settings.py](static/images/settings_py_validation.png)
+
 
 ### Lighthouse
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
+I tested the home page and the products page. I chose to test the products page because it has the most content.
 
 - Home page test
-  [Home Page Lighthouse desktop view](URL)
-  [Home Page Lighthouse mobile view](URL)
+  [Home Page Lighthouse desktop view](static/images/lighthouse_home_desktop.png)
+  [Home Page Lighthouse mobile view](static/images/lighthouse_home_mobile.png)
 
-- User Page test
-  [User Page Lighthouse desktop view](URL)
-  [User Page Lighthouse mobile view](URL)
+- Products page test
 
-- Login page test
-  [Login Page Lighthouse desktop view](URL)
-  [Login Page Lighthouse mobile view](URL)
-
-- Register page test
-  [Register Page Lighthouse desktop view](URL)
-  [Register Page Lighthouse mobile view](URL)
+  [Products Page Lighthouse desktop view](static/images/lighthouse_products_desktop.png)
+  [Products Page Lighthouse mobile view](static/images/lighthouse_products_mobile.png)
 
 ## MANUAL TESTING
 
@@ -150,21 +163,21 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 | Goals                                                                   | How are they achieved?                                                                           | Image                                                                              |
 | :---------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
-| Navigate on the site. | I have achieved this with a main navigation bar. |  [Navbar](URL) |
-| Register an account.  | I have crated a fully functioning registration module with authentication.  | [Register Page](URL)  |
-| Log-in to the account.  | I have created a login page.  | [Login Page](URL) |
-| Log-out of an account. | I have created a logout page.  | [Logout Page](URL) |
-| Quickly identify product deals. | I have created a deals category | [Deals Category](URL) |
-| View a list of products.  | I have created a products page  | [Products Page](URL)  |
-| Have a personalised user profile. | I have created a user profile where users can store their default shipping details.| [User Page](URL)  |
-| Sort a list of available products.  | I have displayed the available products on the products page. | [Sorting Bar](URL)  |
-| Sort multiple categories of products simultaneously.  | Users can sort products on the products page by various attributes. | [Display Multiple categories](URL)  |
-| Search for products by name and description.  | I have achieved this goal by implementing a search bar. | [Search Bar](URL) |
-| Easily select the quantity and size (if avaliable). | I have implemented a bar where users can increment and decrement quantities.  | [Quantity Bar](URL) |
-| Place an order. | I have created a checkout system using stripe and stripe webhooks.  | [Checkout Page](URL)  |
-| Review and list previous orders.  | I have implemented previous orders in the user page.  | [Userpage](URL) |
+| Navigate on the site. | I have achieved this with a main navigation bar. |  [Navbar](static/images/navbar.png) |
+| Register an account.  | I have crated a fully functioning registration module with authentication.  | [Register Page](static/images/registerpage.png)  |
+| Log-in to the account.  | I have created a login page.  | [Login Page](static/images/loginpage.png) |
+| Log-out of an account. | I have created a logout page.  | [Logout Page](static/images/logoutpage.png) |
+| Quickly identify product deals. | I have created a deals category | N/A |
+| View a list of products.  | I have created a products page  | [Products Page](static/images/productspage.png)  |
+| Have a personalised user profile. | I have created a user profile where users can store their default shipping details.| [User Page](static/images/userpage.png)  |
+| Sort a list of available products.  | I have displayed the available products on the products page. | N/A  |
+| Sort multiple categories of products simultaneously.  | Users can sort products on the products page by various attributes. | N/A  |
+| Search for products by name and description.  | I have achieved this goal by implementing a search bar. | N/A |
+| Easily select the quantity and size (if avaliable). | I have implemented a bar where users can increment and decrement quantities.  | N/A |
+| Place an order. | I have created a checkout system using stripe and stripe webhooks.  | [Checkout Page](static/images/checkoutpage.png)  |
+| Review and list previous orders.  | I have implemented previous orders in the user page.  | [Userpage](static/images/userpage.png) |
 | Get email confirmation about the order placed.  | I have failed to implement real email.| N/A |
-| Contact the shop via email. | I have achieved this by adding an email link to the footer.| [Footer](URL)  |
+| Contact the shop via email. | I have achieved this by adding an email link to the footer.| [Footer](static/images/footer.png)  |
 
 ---
 
