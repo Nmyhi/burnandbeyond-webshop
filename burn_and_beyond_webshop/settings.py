@@ -208,7 +208,7 @@ if 'USE_AWS' in os.environ:
 FREE_DELIVERY_THRESHOLD = 60
 STANDARD_DELIVERY_PERCENTAGE = 10
 
-# stripe
+# stripe variables
 
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
