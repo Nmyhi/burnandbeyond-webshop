@@ -4,7 +4,7 @@ Hello and thank you for choosing Burn and Beyond Webshop for your laser-cut prod
 
 ![App Preview](static/images/amiresponsive.png)
 
-[Live link](URL)
+[Live link](Uhttps://burn-and-beyond-webshop-a7b5a0afa267.herokuapp.com/)
 
 ---
 
@@ -404,104 +404,65 @@ Elephant SQL - To host my database.
 
 - In your IDE workspace:
 
-\*Before we can build our application on Heroku, we need to create a few files that Heroku will need to run our application:
+- In the terminal, install dj_database_url and psycopg2, both of these are needed to connect to your external database
 
-    A requirements.txt file which contains a list of the Python dependencies that our project needs in order to run successfully.
+ pip3 install dj_database_url==0.5.0 psycopg2
 
-    A Procfile which contains the start command to run the project.
+- Update your requirements.txt file with the newly installed packages
 
-- Generate the requirements.txt file with the following command in the terminal. After you run this command a new file called requirements.txt should appear in your root directory
+   pip freeze > requirements.txt
 
-pip freeze --local > requirements.txt
+- In your settings.py file, import dj_database_url underneath the import for os
 
-- add a runtime.txt file to the root directory and add this:
+  import os
+  import dj_database_url
 
-python-3.9.17
+Scroll to the DATABASES section and update it to the following code, so that the original connection to sqlite3 is commented out and we connect to the new ElephantSQL database instead. Paste in your ElephantSQL database URL in the position indicated
 
-- add this line to requirements.txt:
+ # DATABASES = {
+ #     'default': {
+ #         'ENGINE': 'django.db.backends.sqlite3',
+ #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+ #     }
+ # }
+     
+ DATABASES = {
+     'default': dj_database_url.parse('your-database-url-here')
+ }
 
-blinker==1.7.0
+DO NOT commit this file with your database string in the code, this is temporary so that we can connect to the new database and make migrations. We will remove it in a moment.
 
-- Heroku requires a Procfile containing a command to run your program. Inside the root directory of your project create the new file. It must be called Procfile with a capital P, otherwise Heroku won’t recognise it
+In the terminal, run the showmigrations command to confirm you are connected to the external database
 
-- Inside the file, add the following command
-  web: python run.py
+ python3 manage.py showmigrations
 
-- Open your **init**.py file
-- Add an if statement before the line setting the SLQALCHEMY_DATABASE_URI and, in the else, set the value to reference a new variable, DATABASE_URL.
+If you are, you should see a list of all migrations, but none of them are checked off
 
-app = Flask(**name**)
-app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
+- Migrate your database models to your new database
 
-if os.environ.get("DEVELOPMENT") == "True":
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
-else:
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DATABASE_URL")
+  python3 manage.py migrate
 
-- To ensure that SQLAlchemy can also read our external database, its URL needs to start with “postgresql://”, but we should not change this in the environment variable. Instead, we’ll make an addition to our else statement from the previous step to adjust our DATABASE_URL in case it starts with postgres://:
+- Load in the fixtures. Please note the order is very important here. We need to load categories first
 
-if os.environ.get("DEVELOPMENT") == "True":
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
-else:
-uri = os.environ.get("DATABASE_URL")
-if uri.startswith("postgres://"):
-uri = uri.replace("postgres://", "postgresql://", 1)
-app.config["SQLALCHEMY_DATABASE_URI"] = uri
+   python3 manage.py loaddata categories
 
-- In your run.py set the debug mode off:
+- Then products, as the products require a category to be set
 
-import os
-from budgetpal import app
+  python3 manage.py loaddata products
 
-if **name** == "**main**":
-app.run(
-host=os.environ.get("IP"),
-port=int(os.environ.get("PORT")),
-debug=False
-)
+- Create a superuser for your new database
 
-- Save all your files and then add, commit and push your changes to GitHub
+  python3 manage.py createsuperuser
 
-- Heroku setup and deployment:
+- Finally, to prevent exposing our database when we push to GitHub, we will delete it again from our settings.py - we’ll set it up again  using an environment variable in the next video - and reconnect to our local sqlite database. For now, your DATABASE setting in the settings.py file should look like this
 
-- Log into Heroku.com and click “New” and then “Create a new app”
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+     }
+ }
 
-- Choose a unique name for your app, select the region closest to you and click “Create app”
-
-- Go to the Settings tab of your new app
-
-- Click Reveal Config Vars
-
-- Return to your ElephantSQL tab and copy your database URL
-
-- Back on Heroku, add a Config Var called DATABASE_URL and paste your ElephantSQL database URL in as the value. Make sure you click “Add”
-
-- Add each of your other environment variables except DEVELOPMENT and DB_URL from the env.py file as a Config Var. The result should look something like this:
-
-- Navigate to the “Deploy” tab of your app
-
-- In the Deployment method section, select “Connect to GitHub”
-
-- Search for your repo and click Connect
-
-- As we already have all our changes pushed to GitHub, we will use the Manual deploy section and click Deploy Branch. This will start the build process. When finished, it should look something like this
-
-- Now, we have our project in place, and we have an empty database ready for use. As you may remember from our local development, we still need to add our tables to our database. To do this, we can click the “More” button and select “Run console”
-
-- Type python3 into the console and click Run
-
-from budgetpal import db
-db.create_all()
-
-- Exit the Python terminal, by typing exit() and hitting enter, and close the console. Our Heroku database should now have the tables and columns created from our models.py file.
-
-- The app should be up and running now, so click the “Open app” button
-
-- Your deployed app will load, but as your new database is empty there won’t be any categories or tasks displayed yet.
-
-Test that you can Create, Read, Update and Delete both the Categories and Tasks for this application.
-
-- Congratulations! You have successfully deployed your app to Heroku!
 
 ### Local Development
 
