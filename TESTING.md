@@ -4,7 +4,7 @@ This is the manual testing documentation for Burn and Beyond Webshop!
 
 ![App Preview](static/images/amiresponsive.png)
 
-[Live link](URL)
+![Live link](https://burn-and-beyond-webshop-a7b5a0afa267.herokuapp.com/)
 
 ---
 
