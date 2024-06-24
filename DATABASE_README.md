@@ -6,7 +6,7 @@ This database design is for BUrn and Beyond Webshop ecommerce site application t
 
 ![App Preview](static/images/amiresponsive.png)
 
-![Live link](https://burn-and-beyond-webshop-a7b5a0afa267.herokuapp.com/)
+[Live link](https://burn-and-beyond-webshop-a7b5a0afa267.herokuapp.com/)
 
 ## Table of Contents
 

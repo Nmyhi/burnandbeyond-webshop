@@ -4,7 +4,7 @@ Hello and thank you for choosing Burn and Beyond Webshop for your laser-cut prod
 
 ![App Preview](static/images/amiresponsive.png)
 
-![Live link](https://burn-and-beyond-webshop-a7b5a0afa267.herokuapp.com/)
+[Live link](https://burn-and-beyond-webshop-a7b5a0afa267.herokuapp.com/)
 
 ---
 
